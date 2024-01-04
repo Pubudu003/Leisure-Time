@@ -1,0 +1,15 @@
+body{
+    background-color: bisque;
+}
+
+#header{
+    text-align: center;
+    background-color: darkolivegreen;
+    min-width: 100%;
+}
+
+img{
+    display: block;
+
+    max-width: 1000px;
+}

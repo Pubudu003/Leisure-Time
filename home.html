@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Home | Leisure Time</title>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="header_area.css">
+        <link rel="stylesheet" type="text/css" href="footer_area.css">
+        <link rel="stylesheet" type="text/css" href="home/home_page.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    </head>
+
+    <body>
+
+        <!-- header area also include the navigation bar -->
+        <div id="header_container">
+            <ul id="header_bar">
+                <li class="active"><img id="leisure_time_logo"  src="lifestyle.png" alt="Leisure time logo"></li>
+                <li id="page_name" class="active"><div>Leisure Time</div></li>
+                <div id="navigation_bar">
+                    <li class="active"><a href="home.html" class="active">Home</a></li>
+                    <li><a href="about_me.html">About me</a></li>
+                    <li><a href="contact_me.html">Contact me</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </div>
+            </ul>
+        </div>
+
+        <!-- Page contents -->
+        <div id="home_page_cover_container">
+            <img id="home_page_cover" src="home/home page cover.jpg" alt="home page cover">
+            <div id="home_description_container">
+                    <h1 class="home_description_header">Hello Visitor!</h1>
+                    <p class="home_description">From this webpage, you can find what am I doing in my free time, my "Leisure Time."</p>
+                    <p class="home_description">And also you can explore my collectibles.</p>
+            </div>
+        </div>
+
+        <!-- content seperator object -->
+        <div id="content_seperate_area">
+            <div class="content_seperator"></div>
+            <div class="content_header_container">
+                <span class="content_header">MY HOBBIES</span>
+            </div>
+        </div>
+
+        <!-- hobby content area -->
+        <div id="myHobbies_area">
+            <div class="hobby">
+                <a href="home\my hobbies\reading_books.html" target="_self">
+                    <div class="hobby_image">
+                        <img src="home\hobby icons\reading books icon.jpg" alt="reading books">
+                    </div>
+                    <div class="hobby_title">Reading Books</div>
+                </a>
+            </div>
+
+            <div class="hobby">
+                <a href="home\my hobbies\playing_video_games.html" target="_self">
+                    <div class="hobby_image">
+                        <img src="home/hobby icons/video games.jpg" alt="video games">
+                    </div>
+                    <div class="hobby_title">Playing Video Games</div>
+                </a>
+            </div>
+ 
+            <div class="hobby">
+                <a href="home\my hobbies\travelling.html" target="_self">
+                    <div class="hobby_image">
+                        <img src="home/hobby icons/travel.jpg" alt="travelling">
+                    </div>
+                    <div class="hobby_title">Travelling</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="content_seperator"></div>
+        <div class="content_header_container">
+            <span class="content_header">MY COLLECTIONS</span>
+        </div>
+
+        <!-- collection content area -->
+        <div id="myHobbies_area">
+            <div class="hobby">
+                <a href="home\my collections\books_collection.html" target="_self">
+                    <div class="hobby_image">
+                        <img src="home\hobby icons\book collection.jpg" alt="books">
+                    </div>
+                    <div class="hobby_title">Books Collection</div>
+                </a>
+            </div>
+
+            <div class="hobby">
+                <a href="home\my collections\video_games_collection.html" target="_self">
+                    <div class="hobby_image">
+                        <img src="home\hobby icons\ps4 collection.jpg" alt="video games">
+                    </div>
+                    <div class="hobby_title">Video Games Collection</div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- FOOTER AREA -->
+        <footer id="app">
+            <div id="footer_area">
+            <table id="footer_table">
+                <tr id="footer_table_row">
+                    <td><a href="https://www.facebook.com" target="_blank">
+                            <img class="social_media_links" src="facebook.png" alt="facebook.com">
+                        </a></td>
+                    <td><a href="https://www.instagram.com" target="_blank">
+                            <img class="social_media_links" src="instagram.png" alt="instagram.com">
+                        </a></td>
+                    <td><a href="https://twitter.com" target="_blank">
+                            <img class="social_media_links" src="twitter.png" alt="twitter.com">
+                        </a></td>
+                    <td><a href="https://www.tiktok.com" target="_blank">
+                            <img class="social_media_links" src="tik-tok.png" alt="tiktok.com">
+                        </a></td>
+                    <td><a href="https://www.youtube.com" target="_blank">
+                            <img class="social_media_links" src="youtube.png" alt="youtube.com">
+                        </a></td>
+                    <td><input
+                            id="email_input_area"
+                            type="email"
+                            placeholder="email"
+                        >
+                        <input
+                            id="subscribe_button"
+                            type="button"
+                            value="Subscribe"
+                            v-on:click="subscribeAlert()"
+                        ></td>
+                </tr>
+            </table>
+            </div>
+        </footer>
+
+        <script src="home/footer_jscript.js"></script>
+    </body>
+</html>

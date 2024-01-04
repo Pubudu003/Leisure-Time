@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Feedback | Leisure Time</title>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="header_area.css">
+        <link rel="stylesheet" type="text/css" href="footer_area.css">
+        <link rel="stylesheet" type="text/css" href="feedback\feedback_page.css">
+        
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    </head>
+
+    <body>
+
+        <!-- header area also include the navigation bar -->
+        <div id="header_container">
+        <ul id="header_bar">
+            <li class="active"><img id="leisure_time_logo"  src="lifestyle.png" alt="Leisure time logo"></li>
+            <li id="page_name" class="active"><div>Leisure Time</div></li>
+            <div id="navigation_bar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about_me.html">About me</a></li>
+            <li><a href="contact_me.html">Contact me</a></li>
+            <li class="active"><a href="feedback.html" class="active">Feedback</a></li>
+            </div>
+        </ul>
+        </div><br><br><br>
+
+        <!-- Page contents -->
+        <!-- Feedback contents -->
+        <div id="vueApp">
+
+            <div id="typing_area">
+                <div id="nameEmail_input_area">
+                    <input id="name_input" type="text" v-model="name" placeholder="Name">
+                    <input id="email_input" type="email" v-model="email" placeholder="Email">
+                </div>
+                <textarea v-model="feed_text" placeholder="write here!"></textarea>
+                <button id="submit_button" v-on:click="submitFeedback()">Submit</button>
+            </div>
+    
+            <div id="feedback_view_area" v-if="feedbacks.length > 0" >
+
+                <!-- content seperator object -->
+                <div class="content_seperator"></div>
+                <div class="content_header_container">
+                    <span class="content_header">Recent Feedbacks</span>
+                </div>
+                
+                <div id="recent_feedbacks">
+                    <div id="feedback" v-for="feedback in feedbacks">
+                        <div id="profile">
+                            <img src="feedback/user.png" alt="profile pic">
+                            <span id="profile_name">{{feedback.name}}</span>
+                            <span id="profile_email">{{feedback.email}}</span>
+                        </div>
+                        <div id="feedback_text">
+                            <p>{{feedback.message}}</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        
+        <!-- FOOTER AREA -->
+        <footer id="app">
+            <div id="footer_area">
+            <table id="footer_table">
+                <tr id="footer_table_row">
+                    <td><a id="socialmedia_icon_area" href="#facebook.com" target="_blank">
+                            <img class="social_media_links" src="facebook.png" alt="facebook.com">
+                        </a></td>
+                    <td><a href="#insta.com" target="_blank">
+                            <img class="social_media_links" src="instagram.png" alt="instagram.com">
+                        </a></td>
+                    <td><a href="#twitter.com" target="_blank">
+                            <img class="social_media_links" src="twitter.png" alt="twitter.com">
+                        </a></td>
+                    <td><a href="#tik_tok.com" target="_blank">
+                            <img class="social_media_links" src="tik-tok.png" alt="tiktok.com">
+                        </a></td>
+                    <td><a href="#youtube.com" target="_blank">
+                            <img class="social_media_links" src="youtube.png" alt="youtube.com">
+                        </a></td>
+                    <td><input
+                            id="email_input_area"
+                            type="email"
+                            placeholder="email"
+                        >
+                        <input
+                            id="subscribe_button"
+                            type="button"
+                            value="Subscribe"
+                            v-on:click="subscribeAlert()"
+                        ></td>
+                </tr>
+            </table>
+            </div>
+           
+        </footer>
+
+        <script src="feedback/feedback.js"></script>
+        <script src="home/footer_jscript.js"></script>
+    </body>
+</html>

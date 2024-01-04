@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About me | Leisure Time</title>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="header_area.css">
+        <link rel="stylesheet" type="text/css" href="footer_area.css">
+        <link rel="stylesheet" type="text/css" href="about me\about_me_page.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    </head>
+
+    <body>
+
+        <!-- header area also include the navigation bar -->
+        <div id="header_container">
+        <ul id="header_bar">
+            <li class="active"><img id="leisure_time_logo"  src="lifestyle.png" alt="Leisure time logo"></li>
+            <li id="page_name" class="active"><div>Leisure Time</div></li>
+            <div id="navigation_bar">
+            <li><a href="home.html">Home</a></li>
+            <li class="active"><a href="about_me.html" class="active">About me</a></li>
+            <li><a href="contact_me.html">Contact me</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            </div>
+        </ul>
+        </div>
+
+        <!-- Page contents -->
+        <div id="content_area">
+            <div id="prop_pic_container">
+                <img id="profile_pic" src="about me\profile.png" alt="my profile pic">
+            </div>
+    
+            <div id="text_area">
+                <p class="aboutme_text">Hello there!</p>
+                <p class="aboutme_text">My name is <span class="bold_text">Pubudu Lakshan Withana</span>.</p>
+                <p class="aboutme_text">I'm an undergraduate student in the <a href="https://ou.ac.lk/" target="_blank" class="ousl_links"><span class="bold_text">Open University of SriLanka</span></a>.</p>
+                <p class="aboutme_text">I'm follwing the <a href="https://ou.ac.lk/bsehons/" target="_blank" class="ousl_links"><span class="bold_text">Bachelor of Software Engineering Honours</span></a> degree.</p>
+                <p class="aboutme_text">My hometown is Wellawaya and currently live in Ratmalana.</p>
+            </div>
+        </div>
+        
+        <!-- FOOTER AREA -->
+        <footer id="app">
+            <div id="footer_area">
+            <table id="footer_table">
+                <tr id="footer_table_row">
+                    <td><a id="socialmedia_icon_area" href="#facebook.com" target="_blank">
+                            <img class="social_media_links" src="facebook.png" alt="facebook.com">
+                        </a></td>
+                    <td><a href="#insta.com" target="_blank">
+                            <img class="social_media_links" src="instagram.png" alt="instagram.com">
+                        </a></td>
+                    <td><a href="#twitter.com" target="_blank">
+                            <img class="social_media_links" src="twitter.png" alt="twitter.com">
+                        </a></td>
+                    <td><a href="#tik_tok.com" target="_blank">
+                            <img class="social_media_links" src="tik-tok.png" alt="tiktok.com">
+                        </a></td>
+                    <td><a href="#youtube.com" target="_blank">
+                            <img class="social_media_links" src="youtube.png" alt="youtube.com">
+                        </a></td>
+                    <td><input
+                            id="email_input_area"
+                            type="email"
+                            placeholder="email"
+                        >
+                        <input
+                            id="subscribe_button"
+                            type="button"
+                            value="Subscribe"
+                            v-on:click="subscribeAlert()"
+                        ></td>
+                </tr>
+            </table>
+            </div>
+           
+        </footer>
+        <script src="home/footer_jscript.js"></script>
+    </body>
+</html>

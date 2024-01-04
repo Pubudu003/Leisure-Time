@@ -1,0 +1,59 @@
+.social_media_links{
+    width: 50px;
+    opacity: 90%;
+    border-radius: 100%;
+}
+
+#footer_table{
+    width: 50%;
+    margin:auto;
+    padding-top: 8px;
+}
+
+#footer_table_row{
+    text-align: center;
+}
+
+#footer_area{
+    background-color:#0B3954;
+    height: 75px;
+    width: 100%;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.social_media_links:hover{
+    position: relative;
+    top: 3px; right: 3px;
+    opacity: 100%;
+    box-shadow: 0 0 10px #E5F4E3;
+    
+}
+
+tr#footer_table_row td{
+    vertical-align: middle;
+}
+
+#email_input_area{
+    background-color: #E5F4E3;
+    border-radius: 5px;
+    width: 185px;
+    height: 25px;
+}
+
+#subscribe_button{
+    background-color: #EEB902;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    color: #E5F4E3;
+    border: 3px solid grey;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+#subscribe_button:hover{
+    color:#0B3954;
+    border-color: #0B3954;
+    box-shadow: 0 0 10px #EEB902;
+}

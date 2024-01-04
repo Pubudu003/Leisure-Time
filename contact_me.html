@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Contact me | Leisure Time</title>
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" type="text/css" href="header_area.css">
+        <link rel="stylesheet" type="text/css" href="footer_area.css">
+        <link rel="stylesheet" type="text/css" href="contact me\contact_me_page.css">
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.13/dist/vue.js"></script>
+    </head>
+
+    <body>
+
+        <!-- header area also include the navigation bar -->
+        <div id="header_container">
+            <ul id="header_bar">
+                <li class="active"><img id="leisure_time_logo"  src="lifestyle.png" alt="Leisure time logo"></li>
+                <li id="page_name" class="active"><div>Leisure Time</div></li>
+                <div id="navigation_bar">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about_me.html">About me</a></li>
+                    <li class="active"><a href="contact_me.html" class="active">Contact me</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </div>
+            </ul>
+        </div>
+
+        <!-- Page contents -->
+        <div id="page_content">
+
+            <div id="text_area">
+                <p>If you need any help ragarding the hobbies and collectibles,<br> 
+                    or if you want to know something more about my hobbies and collectibles,<br>
+                    please contact me. </p>
+            </div>
+            <div id="contact_option_container">
+                <div class="contact_area" id="phone_area">
+                    <img class="contact_icons" src="contact me\smartphone.png" alt="mobile icon">
+                    <p class="contact_header">WHATSAPP</p>
+                    <p class="contact">+94 76 4128721</p>
+                </div>
+                <div class="contact_area" id="email_area">
+                    <img class="contact_icons" src="contact me\email.png" alt="email icon">
+                    <p class="contact_header">EMAIL</p>
+                    <p class="contact">pubuduakshan04@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+        
+
+        
+        <!-- FOOTER AREA -->
+        <footer id="app">
+            <div id="footer_area">
+            <table id="footer_table">
+                <tr id="footer_table_row">
+                    <td><a id="socialmedia_icon_area" href="#facebook.com" target="_blank">
+                            <img class="social_media_links" src="facebook.png" alt="facebook.com">
+                        </a></td>
+                    <td><a href="#insta.com" target="_blank">
+                            <img class="social_media_links" src="instagram.png" alt="instagram.com">
+                        </a></td>
+                    <td><a href="#twitter.com" target="_blank">
+                            <img class="social_media_links" src="twitter.png" alt="twitter.com">
+                        </a></td>
+                    <td><a href="#tik_tok.com" target="_blank">
+                            <img class="social_media_links" src="tik-tok.png" alt="tiktok.com">
+                        </a></td>
+                    <td><a href="#youtube.com" target="_blank">
+                            <img class="social_media_links" src="youtube.png" alt="youtube.com">
+                        </a></td>
+                    <td><input
+                            id="email_input_area"
+                            type="email"
+                            placeholder="email"
+                        >
+                        <input
+                            id="subscribe_button"
+                            type="button"
+                            value="Subscribe"
+                            v-on:click="subscribeAlert()"
+                        ></td>
+                </tr>
+            </table>
+            </div>
+           
+        </footer>
+        <script src="home/footer_jscript.js"></script>
+    </body>
+</html>

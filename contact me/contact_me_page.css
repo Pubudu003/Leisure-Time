@@ -1,0 +1,87 @@
+#page_content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#text_area{
+    text-align: center;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #0B3954;
+    text-shadow: 3px 4px 5px #1B998B;
+}
+
+#contact_option_container{
+    width: 100%;
+    height: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    display:flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.contact_icons{
+    width:40%;
+    display: block;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    margin-top: 25px;
+    opacity: 45%;
+}
+
+.contact_header{
+    font-size: 36px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #a8f5ec;
+    text-shadow: 2px 2px 2px #D1495B;
+    position:relative;
+    bottom: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width:auto;
+    padding: 8px;
+}
+
+#phone_area{
+    margin-left: 10%;
+    margin-right: auto;
+    text-align: center;
+}
+
+#email_area{
+    margin-right: 10%;
+    margin-left: auto;
+    text-align: center;
+}
+
+.contact_area{
+    min-width: 450px;
+    background-color: #0B3954;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 3px 2px 3px 0px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #EEB902;
+    margin-top: -50px;
+    padding-bottom: 20px;
+}
+

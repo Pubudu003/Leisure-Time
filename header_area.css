@@ -1,0 +1,60 @@
+body{
+    margin: 30px 10px;
+    background-color: #E5F4E3;
+}
+
+#header_container{
+    width: 100%;
+}
+
+#leisure_time_logo{
+    width: 50px;
+    margin-right: 8px;
+}
+
+ul#header_bar{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul#header_bar li{
+    float: left;
+}
+
+ul#header_bar li a{
+    display: block;
+    background-color: #0B3954;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    width: 90px;
+}
+
+ul#header_bar li a.active{
+    background-color: #1B998B;
+}
+
+ul#header_bar li a:hover:not(.active){
+    color: #EEB902;
+}
+
+ul#header_bar li:hover:not(.active){
+    opacity: 92%;
+}
+
+#page_name{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bolder;
+    color: #1B998B;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    font-size: 48px;
+    margin-right:420px;
+    text-shadow: 2px 2px 3px #0B3954;
+
+}
+
